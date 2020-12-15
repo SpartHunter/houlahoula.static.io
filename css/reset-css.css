@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@-ms-viewport {
+  viewport-fit: contain;
+}
+@-o-viewport {
+  viewport-fit: contain;
+}
+@viewport {
+  viewport-fit: contain;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+*:active, *:hover, *:focus {
+  outline: none;
+}
+
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+iframe,
+object,
+embed,
+video {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+textarea,
+table,
+td,
+th,
+code,
+pre,
+samp {
+  -webkit-hyphens: auto;
+  /* césure propre */
+  -ms-hyphens: auto;
+      hyphens: auto;
+  word-wrap: break-word;
+  /* passage à la ligne forcé */
+}
+
+code,
+pre,
+samp {
+  white-space: pre-wrap;
+  /* passage à la ligne spécifique pour les éléments à châsse fixe */
+}
+
+button, input, button:active, button:hover, button:focus, input:active, input:hover, input:focus {
+  outline: none;
+}
+
+.element1, .element2 {
+  float: none;
+  width: auto;
+}
+
+/*# sourceMappingURL=../maps/reset-css.css.map */

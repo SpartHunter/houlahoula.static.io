@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "black";
+  src: url("../medias/fonts/black.ttf");
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("../medias/fonts/bold.ttf");
+}
+
+@font-face {
+    font-family: "medium";
+    
+    src: url("../medias/fonts/medium.ttf");
+}
+@font-face {
+    font-family: "light";
+    src: url("../medias/fonts/light.ttf");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("../medias/fonts/regular.ttf");
+}
+
+@font-face {
+    font-family: "semi-bold";
+    src: url("../medias/fonts/semi-bold.ttf");
+}
+
+@font-face {
+  font-family: "thin";
+  src: url("../medias/fonts/thin.ttf");
+}
+
+.font-black{
+  font-family: "black", sans-serif !important;
+  font-size: 1vw;
+}
+
+.font-bold{
+    font-family: "bold", sans-serif !important;
+    font-size: 1vw;
+  }
+  
+  .font-medium{
+    font-family: "medium", sans-serif !important;
+    font-size: 1vw;
+  }
+
+  .font-light{
+    font-family: "light", sans-serif !important;
+    font-size: 1vw;
+  }
+  
+  .font-regular{
+    font-family: "regular", sans-serif !important;
+    font-size: 1vw;
+  }
+  
+  .font-semi-bold{
+    font-family: "semi-bold", sans-serif !important;
+    font-size: 1vw;
+  }
+  
+  .font-thin{
+    font-family: "thin", sans-serif !important;
+    font-size: 1vw;
+  }
+
+
+  .font{
+    font-variant-ligatures: no-common-ligatures;
+    line-height: 1.5;
+  }

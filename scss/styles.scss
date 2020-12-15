@@ -1,0 +1,173 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "node_modules/minireset.css/minireset.sass";
+
+html, body{
+    background: #06163b;
+    color: white;
+}
+
+.wrapper{
+
+    .vid-fullscreen{
+        padding: 0;
+        height: calc(51.85vw - 1 * ((100vh - 920px) / 2000));
+        min-height: -webkit-fill-available;
+    
+        .vid-content{
+            margin: 0;
+            height: inherit;
+            min-height: -webkit-fill-available;
+    
+            .embed-responsive-item{
+                object-fit: unset;
+            }
+
+            .vid-item.hidden{
+                transform:translateY(65rem);
+                transition: all 0.6s ease-in-out;
+            }
+
+            .vid-item.visible{
+                transform: translateY(0);
+            }
+
+            .vid-item.hidden.view-slide{
+                opacity: 1;
+                transform:translateY(0);
+                transition: all 0.6s ease-in-out;
+            }
+        }
+
+        .end-slide{
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #06163b;
+            background-image: url('../medias/img/logo/textlogo.png');
+            background-repeat: no-repeat;
+            background-size: rfs(35%);
+            background-position: center;
+            height: inherit ;
+        }
+    }
+
+    .slide-contact{
+        padding: 0;
+        height: calc(56.6vw + 10 * ((100vh - 920px) / 2000));
+        min-height: -webkit-fill-available;
+        position: relative;
+
+        @media (min-width: 280px) and (max-width: 991px){
+            height: calc(100vh - calc(20vw - 1 * ((100vh - 920px) / 2000)));
+        }
+
+        .logo-filigram img{
+            width: rfs(35rem);
+            height: rfs(17rem);
+            // width: calc(50rem - 0 * ((100vw - 500px) / 2000));
+        }
+
+        .content-contact{
+
+            width: rfs(100%);
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: auto;
+            bottom: 0;
+            padding: 50px;
+            background-color: rgba(0,0,0,0.5);
+
+            .circle-arrow{
+                width: rfs(3rem);
+                height: rfs(3rem);
+                cursor: pointer;
+                transform: translateY(calc(calc(36.5vw + 1 * ((100vh - 920px) / 2000))));
+                transition: all 0.4s ease-in-out;
+            }
+            form input{
+                height: 52px;
+            }
+
+            .form-group label{
+                font-size:responsive 17px 20px;
+            }
+
+            .text-content-title h1{
+                font-size:responsive 27px 80px;
+            }
+
+            .text-content-infos h2{
+                font-size:responsive 15px 35px;
+            }
+        }
+
+    }
+
+    .slide-contact.sliding{
+        background-color: #cdd0d9;
+    }
+}
+
+.top-contact{
+
+    .top-contact-form{
+        width: 65%;
+
+        form{
+            width: rfs(30rem);
+            input{
+                height: 52px;
+            }
+        }
+    }
+
+    .text-content-title h1{
+        font-size:responsive 9px 15px;
+    }
+
+    .text-content-infos h2{
+        font-size:responsive 9px 15px;
+    }
+}
+
+form .input-group-text{
+    background-color: #374464;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+form input[type="email"]::placeholder{
+    text-align: center;
+}
+
+
+.invisible{
+    visibility: hidden;
+    transition: all 0.6s ease-in-out;
+}
+
+.no-invisible{
+    visibility: visible  !important;
+}
+
+.no-opacity{
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.yes-opacity{
+    opacity: 1 !important;
+}
